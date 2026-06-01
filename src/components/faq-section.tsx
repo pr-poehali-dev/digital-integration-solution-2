@@ -3,34 +3,34 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export function FAQSection() {
   const faqs = [
     {
-      question: "Насколько безопасна процедура SynapseAI?",
+      question: "Как открыть счёт в NovaBank?",
       answer:
-        "Да, процедура выполняется прецизионным хирургическим роботом и прошла обширное тестирование. Все материалы биосовместимы и одобрены FDA для медицинского применения.",
+        "Всё онлайн: скачайте приложение, загрузите фото паспорта и сделайте селфи. Счёт открывается за 5 минут без похода в офис.",
     },
     {
-      question: "Сколько длится операция?",
+      question: "Сколько стоит обслуживание карты?",
       answer:
-        "Малоинвазивная процедура обычно занимает 2-3 часа и проводится под местной анестезией с седацией.",
+        "Базовая карта и счёт — бесплатно навсегда. Никаких скрытых комиссий за обслуживание или смс-уведомления.",
     },
     {
-      question: "Можно ли удалить устройство?",
+      question: "Насколько безопасны мои деньги?",
       answer:
-        "Да, SynapseAI разработан полностью обратимым. Устройство можно безопасно удалить при необходимости, хотя это требуется редко.",
+        "Все вклады застрахованы государством до 1,4 млн рублей. Данные защищены шифрованием банковского уровня, а операции подтверждаются биометрией.",
     },
     {
-      question: "Какие ощущения при использовании SynapseAI?",
+      question: "Как быстро проходят переводы?",
       answer:
-        "Пользователи отмечают, что управление устройствами силой мысли ощущается естественно и интуитивно после короткого периода обучения. От самого импланта нет физических ощущений.",
+        "Переводы внутри NovaBank — мгновенно. Переводы в другие банки по СБП — до 15 секунд круглосуточно.",
     },
     {
-      question: "Как долго работает батарея?",
+      question: "Есть ли поддержка 24/7?",
       answer:
-        "Устройство заряжается беспроводным способом и работает полный день на одном заряде. Зарядка выполняется внешним устройством, размещаемым рядом с головой.",
+        "Да, поддержка работает круглосуточно в чате приложения. Среднее время ответа — 2 минуты.",
     },
     {
-      question: "Кто может получить SynapseAI?",
+      question: "Можно ли пользоваться NovaBank за рубежом?",
       answer:
-        "В настоящее время мы фокусируемся на людях с тяжелым параличом. Соответствие определяется через комплексную медицинскую оценку.",
+        "Конечно. Карта работает в 180+ странах, оплата по выгодному курсу без дополнительных комиссий. Снятие наличных в партнёрских банкоматах бесплатно.",
     },
   ]
 
@@ -40,15 +40,15 @@ export function FAQSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-orbitron">Частые вопросы</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto font-space-mono">
-            Ответы на популярные вопросы о технологии SynapseAI, безопасности и опыте пациентов.
+            Ответы на самые популярные вопросы о NovaBank, безопасности и условиях обслуживания.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-red-500/20 mb-4">
-                <AccordionTrigger className="text-left text-lg font-semibold text-white hover:text-red-400 font-orbitron px-6 py-4">
+              <AccordionItem key={index} value={`item-${index}`} className="border-blue-500/20 mb-4">
+                <AccordionTrigger className="text-left text-lg font-semibold text-white hover:text-blue-400 font-orbitron px-6 py-4">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300 leading-relaxed px-6 pb-4 font-space-mono">
